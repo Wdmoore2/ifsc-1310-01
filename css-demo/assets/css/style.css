@@ -14,31 +14,94 @@ html {
     box-sizing: inherit;
 }
 
-nav 
-{
+nav {
     overflow: hidden;
-    background-color: #F2AA6B:
-    ;
-    color:#A63D33;
-    list-style-type:none;
+    background-color: #F2AA6B:;
+    color: #A63D33;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 
 
 }
-body 
-{
-    background-color:#F2BE5C;
+
+body {
+    background-color: #F2BE5C;
     font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     font-weight: normal;
-    color:#403940;
+    color: #403940;
+    margin: 0;
 }
 
-main{}
+main {}
 
-header.primary
-{
-    background-color:#F2AA6B ;
-    text-align center; 
+header.primary {
+    background-color: #F2AA6B;
+    text-align center;
 
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding: 40px;
+    /* T,R,B,L */
+    padding: 20px 40px 20px 40px;
+}
+
+header.primary h1 {
+    font-size: 2.4rem;
+    margin: 20px 0 0;
+}
+
+header.primary h1 a {
+    color: white;
+    text-decoration: none;
+
+}
+
+header.primary h2 {
+    font size: 1.4rem;
+    margin: 0;
+}
+
+header.primary nav {}
+
+header.primary nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    padding: 0;
+}
+
+header.primary nav ul li {
+    list-style-type: none;
+    margin: 10px auto;
+
+}
+
+header.primary nav li a {
+    color:white;
+    text-decoration: none;
+    border: 1px solid #c0c0c0
+    padding: 7.5px 10px;
+    background-color:rgba(0,0,0,.4);
+    border-radius:20px;
+    transition:.4s;
+
+}
+header.primary nav li a:hover{
+    background-color: #F2AA6B;
+
+}
+
+
+
+
+/*---------- Media Queries----------*/
+@media screen and (max-width:400px) {
+  flex-direction:column;
+    gap:10px;
+}
+header.primary nav a {
+    display: block;
 }
