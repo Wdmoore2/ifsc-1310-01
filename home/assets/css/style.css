@@ -14,31 +14,33 @@ html {
     box-sizing: inherit;
 }
 
-nav 
+nav
 {
+    width: 450px;
     overflow: hidden;
-    background-color: #F2AA6B:
-    ;
+    background-color:#F2AA6B;
     color:#A63D33;
     list-style-type:none;
     margin: 0;
     padding: 0;
 
-
+    
 }
 body 
 {
-    background-color:#F2BE5C;
-    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
-    font-weight: normal;
+  background-color:#F2BE5C;
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+font-weight: normal;
     color:#403940;
+
 }
 
 main{}
 
 header.primary
 {
-    background-color:#F2AA6B ;
+    background-color:#8F4F19;
+    color:#8F4F19; 
     text-align center; 
-
+    text-shadow: 1px 1 px 20 px #8F4F19;
 }
