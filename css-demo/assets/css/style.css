@@ -7,6 +7,7 @@ Main Color - #3C85FA
 
 /*  ---------------Box Sizing-----------------  */
 
+
 html {
     box-sizing: border-box;
 }
@@ -17,16 +18,33 @@ html {
     box-sizing: inherit;
 }
 
+/*  ---------------Utility Classes-----------------  */
+.container {
+    max-width: 960px;
+    width: 80vw;
+    margin: 40px auto;
+
+}
+
+
+
+/*  ---------------Responsive Images----------------  */
+img {
+    max-width: 100%;
+}
+
+
+
+
+
 body {
     font-family: "Oswald", sans-serif;
     margin: 0;
 }
 
-main 
-
-header.primary {
+main header.primary {
     background-color: #0785F2;
-    color:#F29D35;
+    color: #F29D35;
     text-align: center;
     text-shadow: 1px 1px #000000;
     /*long form*/
@@ -59,7 +77,9 @@ header.primary h2 {
 }
 
 header.primary nav {
-    
+    max-width: 960px;
+    margin: auto;
+
 }
 
 header.primary nav ul {
@@ -88,6 +108,43 @@ header.primary nav ul li a:hover {
     background-color: rgba(0, 0, 0, .8);
 }
 
+#content {
+    line-height: 1.4;
+}
+
+#content h2 {
+    color: #F29D35 border: 1px dotted #darkgrey;
+}
+
+#blog {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#blog article.post;:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
+    padding: 10px;
+    border-radius:4px;
+    font-size: 8rem;
+    transition: 4s;
+}
+
+#blog figure {
+    margin: 0;
+}
+
+#blog figcaption,time.post-date {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    text-align: center;
+    color: blue;
+}
+
+#blog.post a {
+color:#F29D35;
+}
 
 
 /* --------- Media Queries ----------- */
