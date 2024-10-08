@@ -11,7 +11,6 @@ Main Color - #3C85FA
 html {
     box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
@@ -20,8 +19,8 @@ html {
 
 /*  ---------------Utility Classes-----------------  */
 .container {
-    max-width: 960px;
     width: 80vw;
+    max-width: 960px;
     margin: 40px auto;
 
 }
@@ -30,22 +29,20 @@ html {
 
 /*  ---------------Responsive Images----------------  */
 img {
-    max-width: 100%;
+    max-width:100%;
 }
-
-
-
-
 
 body {
     font-family: "Oswald", sans-serif;
     margin: 0;
 }
 
-main header.primary {
+main
+
+header.primary{
     background-color: #0785F2;
     color: #F29D35;
-    text-align: center;
+    text-align:center;
     text-shadow: 1px 1px #000000;
     /*long form*/
     padding-top: 40px;
@@ -60,7 +57,7 @@ main header.primary {
     padding: 20px 40px;
 }
 
-header.primary h1 {
+header.primary h1{
     font-size: 2.4rem;
     /* top | left and right | bottom */
     margin: 20px 0 0;
@@ -71,37 +68,37 @@ header.primary h1 a {
     text-decoration: none;
 }
 
-header.primary h2 {
+header.primary h2{
     font-size: 1.3rem;
     margin: 0;
 }
 
 header.primary nav {
-    max-width: 960px;
-    margin: auto;
+    max-width:960px;
+    margin:auto;
 
 }
 
 header.primary nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px 0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:10px 0;
 }
 
 header.primary nav ul li {
-    list-style-type: none;
+    list-style-type:none;
 }
 
 header.primary nav ul li a {
     color: #ffffff;
-    font-size: .9rem;
+    font-size:.9rem;
     text-decoration: none;
     border: 1px solid #c0c0c0;
     padding: 7.5px 10px;
     background-color: rgba(0, 0, 0, .4);
     border-radius: 20px;
-    transition: .4s;
+    transition:.4s;
 }
 
 header.primary nav ul li a:hover {
@@ -112,37 +109,42 @@ header.primary nav ul li a:hover {
     line-height: 1.4;
 }
 
-#content h2 {
-    color: #F29D35 border: 1px dotted #darkgrey;
+#content h2{
+    color: #F29D35;
+    border-bottom: 1px dotted darkgrey;
 }
 
 #blog {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 2rem;
+    justify-content:space-around;
+    flex-direction:row;
+    gap:2rem;
 }
 
-#blog article.post;:hover {
+#blog article.post {
     box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
     padding: 10px;
     border-radius:4px;
-    font-size: 8rem;
+    font-size: .8rem;
     transition: 4s;
+}
+
+#blog article.post:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
 }
 
 #blog figure {
     margin: 0;
 }
 
-#blog figcaption,time.post-date {
+#blog figcaption, time.post-date {
     text-transform: uppercase;
     font-size: 0.6rem;
     text-align: center;
     color: blue;
 }
 
-#blog.post a {
+#blog.post a{
 color:#F29D35;
 }
 
@@ -152,12 +154,13 @@ color:#F29D35;
 @media screen and (max-width: 560px) {
 
     header.primary nav ul {
-        flex-direction: column;
-        gap: 10px;
-        max-width: 200px;
-        margin: 10px auto;
+        flex-direction:column;
+        gap:10px;
+        max-width:200px;
+        margin:10px auto;
     }
 
-    header.primary nav a {
-        display: block;
-    }
+        header.primary nav a {
+            display: block;
+        }
+}
