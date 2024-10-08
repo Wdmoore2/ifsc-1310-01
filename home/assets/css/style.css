@@ -31,7 +31,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
-    width: 50% max-width: 100%;
+    width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -41,11 +42,11 @@ body {
 
 }
 
-main {}
+main
 
 header.primary {
     background-color: #8F4F19;
     color: #8F4F19;
-    text-align center;
+    text-align: center;
     text-shadow: 1px 1 px 20 px #8F4F19;
 }
