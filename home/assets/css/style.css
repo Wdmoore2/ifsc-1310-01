@@ -15,9 +15,8 @@ html {
 }
 
 nav {
-    width: 450px;
+    width: 500px;
     overflow: hidden;
-    background-color: #F2AA6B;
     color: #A63D33;
     list-style-type: none;
     margin: 0;
