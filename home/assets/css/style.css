@@ -18,8 +18,8 @@ nav {
     flex-direction: column;
     width: 500px;
     overflow: hidden;
-    color:#F2441D;
-    list-style-type: none;
+    color:black;
+    list-style-type:square;
     margin: 5px;
     padding: 10px;
 
