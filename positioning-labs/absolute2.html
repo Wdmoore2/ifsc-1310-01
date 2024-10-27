@@ -28,62 +28,51 @@
     }
 
     #wrapper {
+      position: relative;
       background-color: #FFF;
       border: 1px solid #c0c0c0;
       width: 800px;
       margin-right: auto;
-      margin-left: auto;
-      padding: 250px;
-      margin-left: 100px;
-      margin-right: 200px;
-      margin-top: 0px;  
+      margin-left: auto;  
       text-shadow: 2px 2px #000;
+      height: 80vh;
+    }
+    #wrapper > div {
+      position: absolute;
+      width: 100px;
+      height: 100px;
     }
 
     #navy {
       background-color: #001f3f;
-      width: 200px;
-      height: 100px;
-      margin-top: -250px;
-      margin-left: -250px;
-      position: absolute;
+      top: 0;
+      bottom: 0;
 
     }
 
     #teal {
       background-color: #39CCCC;
-      width: 200px;
-      height: 100px;
-      position: absolute;
-      margin-top: -250px;
-      margin-left: 350px;
+      top: 0;
+      right: 0;
     }
 
     #blue {
       background-color: #0074D9;
-      width: 200px;
-      height: 100px;
-      position:absolute;
-      margin-top: 150px;
-      margin-left: -250px;
+      bottom: 0;
+      left:0;
     }
 
     #aqua {
       background-color: #7FDBFF;
-      position: absolute;
-      width: 200px;
-      height: 100px;
-      margin-top: 150px;
-      margin-left: 350px
+      bottom: 0;
+      right: 0;
     }
 
-    #footer {
+    div#footer {
       background-color: #666;
-      position: absolute;
-      width: 200px;
-      height: 100px;
-      margin-top: -50px;
-      margin-left: 50px
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
 
     h1 {
