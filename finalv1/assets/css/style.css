@@ -1,0 +1,12 @@
+body { 
+    font-family: "Manrope", sans-serif; 
+
+
+.logo { 
+         background: url(../finalv1/assets/img/spacexlogo.webp) no-repeat; 
+         width: 100px; 
+         height: 100px; 
+         display: block; 
+         text-indent: -9999px;
+}
+}
