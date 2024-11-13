@@ -68,14 +68,19 @@ html {
     position: relative;
   }
 
-  .replace-scott {
-    width: 264px;
-    height: 106px;
-    background-image: url(/assets/img/spacexlogo.webp); background-repeat: no-repeat;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+  header.primary::before {
+    content: "";
+    background-image: url("https://assets.codepen.io/7248/dragon-in-space.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
   }
+
+  
   
   header.primary::before {
     content: "";
@@ -96,11 +101,10 @@ html {
   }
   
   header.primary h1 a {
-    color: #ffffff;
-    background-image: url("../finalv1/assets/img/dragoncrew8.jpg");
+    background-image: url("../img/spacexlogo.png");
     display: block;
-    width: 460px;
-    height: 70px;
+    width: auto;
+    height: auto;
     margin: 0 auto;
     text-indent: 100%;
     white-space: nowrap;
