@@ -51,9 +51,15 @@ img {
 
 /* ----- Global Styles ---- */
 body {
-  font-family: "Manrope", sans-serif;
-  margin: 0;
+  margin: auto;
 }
+
+.bowlby-one-regular {
+  font-family: "Bowlby One";
+  font-weight: 400;
+  font-style: normal;
+}
+  
 
 header.primary {
   background-color: #181c1f;
@@ -101,7 +107,7 @@ header.primary h1 {
   z-index: 3; 
 }
 
-/* SpaceX logo styling */
+
 header.primary h1 a {
   background-image: url("../img/spacexlogoo.png"); 
   width: 750px; 
@@ -185,11 +191,13 @@ aside article.widget {
 .widget.overview table {
   font-size: 0.7em;
   border-collapse: collapse;
+  
 }
 
 .widget.overview table td {
   border-bottom: 1px solid #fff;
   padding: 10px;
+
 }
 
 .widget.overview table td:nth-child(even) {
