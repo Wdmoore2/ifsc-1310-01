@@ -54,12 +54,29 @@ body {
   margin: auto;
 }
 
-.bowlby-one-regular {
-  font-family: "Bowlby One";
+.space-mono-regular {
+  font-family: "Space Mono", serif;
   font-weight: 400;
   font-style: normal;
 }
-  
+
+.space-mono-bold {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: italic;
+}
 
 header.primary {
   background-color: #181c1f;
@@ -107,7 +124,6 @@ header.primary h1 {
   z-index: 3; 
 }
 
-
 header.primary h1 a {
   background-image: url("../img/spacexlogoo.png"); 
   width: 750px; 
@@ -121,7 +137,6 @@ header.primary h1 a {
   display: block; 
   position: relative; 
 }
-
 
 header.primary h2 {
   font-family: "Goldman", cursive;
@@ -166,6 +181,41 @@ header.primary nav a:active {
 
 /* ------------- Content --------------- */
 
+/* Article Styles */
+article.post {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article.post header {
+  margin-bottom: 20px;
+}
+
+article.post h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+article.post p {
+  margin-bottom: 20px;
+}
+
+/* List Styles */
+article.post ul,
+article.post ol {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+article.post ul li,
+article.post ol li {
+  margin-bottom: 10px;
+}
+
 /* ------------- Hero --------------- */
 #hero {
   padding: 4em 0;
@@ -191,13 +241,11 @@ aside article.widget {
 .widget.overview table {
   font-size: 0.7em;
   border-collapse: collapse;
-  
 }
 
 .widget.overview table td {
   border-bottom: 1px solid #fff;
   padding: 10px;
-
 }
 
 .widget.overview table td:nth-child(even) {
@@ -262,7 +310,6 @@ footer#colophon {
     text-align: center; 
   }
 
- 
   footer#colophon {
     padding: 20px; 
     clear: both; 
