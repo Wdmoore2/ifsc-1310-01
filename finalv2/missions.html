@@ -4,30 +4,38 @@
 <head>
     <title>Space X</title>
     <meta charset="UTF-8" />
-    <meta name="Space X Promotional Site " content="Space X Showcasing the Dragon Vehicle" />
+    <meta name="Space X Promotional Site" content="Space X Showcasing the Dragon Vehicle" />
     <meta name="author" content="Will Moore" />
     <meta name="robots" content="noindex">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Manrope:wght@200..800&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 
 <body>
     <header role="banner" class="primary">
       <h1 class="replace-scott"> 
-        </h1>
-        <h1><a href="index.html">Space X</a></h1>
-        <h2>Beyond Boundaries, Towards Tomorrow.</h2>
-        <nav role="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="missions.html">Missions</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
+      </h1>
+      <h1><a href="index.html">Space X</a></h1>
+      <h2>Beyond Boundaries, Towards Tomorrow.</h2>
+      <nav role="navigation">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="missions.html">Missions</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="about.html">About Us</a></li>
+          </ul>
+      </nav>
     </header>
+    
+    <!-- Video Embed Section -->
+    <section id="video-section" class="container">
+        <h2>Watch Our SpaceX Video</h2>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/Osq_a30_Jd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
     
     <section id="content" class="container">
         <h2>Missions</h2>
@@ -79,14 +87,27 @@
                 </tr>
             </tbody>
         </table>
-        <figure> 
-        <img src="../finalv1/assets/img/SpaceX_Dragon_2_Pad_Abort_Test_Infographic.jpg" alt="Deployment graph">
-        </figure>
+     
+        <section id="content" class="container">
+            <h2>Missions</h2>
+            <div class="fade">
+                <div><img src="../finalv1/assets/img/SpaceX_Dragon_2_Pad_Abort_Test_Infographic.jpg" alt="Deployment graph"></div>
+                <div><img src="../finalv2/assets/img/dragon-intertior-cargo.jpg" alt="Dragon Interior"></div>
+                <div><img src="../finalv2/assets/img/Dragon_V2_01.png" alt="View from different angles"></div>
+            </div>
+        </section>
+        
     </section>
-
-    <footer id="colophon" role="contentinfo"> 
-    <h6>&copy; 2024 Will Moore <a href="mailto:wdmoore2@ualr.edu">Contact Us</a> <a href="https://ualr.edu/www/">UA Little Rock Website</a></h6>6>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>      
+    <script src="assets/js/scripts.js"></script>
+    
+    <footer id="colophon">
+        <h6>&copy; 2024 Will Moore <a href="mailto:wdmoore2@ualr.edu">Contact Us</a> <a href="https://ualr.edu/www/">UA Little Rock Website</a></h6>
     </footer>
 </body>
 
 </html>
+

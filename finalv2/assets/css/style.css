@@ -52,32 +52,38 @@ img {
 /* ----- Global Styles ---- */
 body {
   margin: auto;
+  font-size: 18px; /* Larger base font size */
 }
 
 .space-mono-regular {
   font-family: "Space Mono", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.2rem; /* Larger font size */
 }
 
 .space-mono-bold {
   font-family: "Space Mono", serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 1.2rem; /* Larger font size */
 }
 
 .space-mono-regular-italic {
   font-family: "Space Mono", serif;
   font-weight: 400;
   font-style: italic;
+  font-size: 1.2rem; /* Larger font size */
 }
 
 .space-mono-bold-italic {
   font-family: "Space Mono", serif;
   font-weight: 700;
   font-style: italic;
+  font-size: 1.2rem; /* Larger font size */
 }
 
+/* Header Styles */
 header.primary {
   background-color: #181c1f;
   text-align: center;
@@ -104,6 +110,10 @@ header.primary::before {
 
 header.primary h1 {
   transition: opacity 0.5s ease-in-out; 
+  font-size: 4rem; /* Larger font size */
+  margin: 20px 0;
+  position: relative;
+  z-index: 3; 
 }
 
 .replace-scott {
@@ -115,13 +125,6 @@ header.primary h1 {
 .fade-in {
   display: block; 
   opacity: 1; 
-}
-
-header.primary h1 {
-  font-size: 3.2rem;
-  margin: 20px 0;
-  position: relative;
-  z-index: 3; 
 }
 
 header.primary h1 a {
@@ -140,7 +143,7 @@ header.primary h1 a {
 
 header.primary h2 {
   font-family: "Goldman", cursive;
-  font-size: 2em;
+  font-size: 2.5rem; /* Larger font size */
   margin: 20px auto 40px; 
   position: relative;
   z-index: 3; 
@@ -171,12 +174,14 @@ header.primary nav a:visited {
   background-color: rgba(142, 166, 184, 0.4);
   padding: 8px 16px;
   border-radius: 10px;
-  transition: background-color 0.6s; 
+  transition: background-color 0.6s, transform 0.3s ease-in-out;
+  font-size: 1.1rem; /* Larger font size for navigation links */
 }
 
 header.primary nav a:hover,
 header.primary nav a:active {
   background-color: rgba(51, 83, 107, 0.8);
+  transform: translateY(-3px); /* Subtle hover effect */
 }
 
 /* ------------- Content --------------- */
@@ -196,11 +201,11 @@ article.post header {
 }
 
 article.post h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 2.5rem; /* Larger font size for article titles */
 }
 
 article.post p {
+  font-size: 1.2rem; /* Larger font size for paragraph text */
   margin-bottom: 20px;
 }
 
@@ -239,7 +244,7 @@ aside article.widget {
 }
 
 .widget.overview table {
-  font-size: 0.7em;
+  font-size: 0.9em; /* Slightly larger font size for table */
   border-collapse: collapse;
 }
 
@@ -258,6 +263,7 @@ aside article a:visited {
   display: block;
   margin-top: 1.2em;
   letter-spacing: 1.2px;
+  font-size: 1.2rem; /* Larger font size for links */
 }
 
 aside article a:hover,
@@ -272,46 +278,38 @@ aside article footer {
 /*------ Footer ------*/
 footer#colophon {
   background-color: #1b2c38;
-  padding: 20px; 
-  clear: both; 
-  position: relative; 
+  padding: 20px 0;
+  clear: both;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 #colophon h6 {
   margin: 0;
   color: #fff;
-  text-align: center;
-  font-size: 0.9rem;
+  font-size: 1.2rem; /* Larger font size for footer text */
   text-transform: uppercase;
 }
 
 #colophon h6 a:link,
 #colophon h6 a:visited {
   color: #fff;
+  text-decoration: none; 
 }
 
-/* ---------------Media Queries----------------- */
-@media screen and (max-width: 600px) {
-  header.primary nav ul {
-    flex-direction: column; 
-    margin: 0 auto;
-    width: 100%; 
-    align-items: center; 
-  }
-
-  header.primary nav ul li {
-    margin-bottom: 10px; 
-    width: auto;
-    padding: 0; 
-  }
-
-  header.primary nav ul li a {
-    width: 100%; 
-    text-align: center; 
-  }
-
-  footer#colophon {
-    padding: 20px; 
-    clear: both; 
-  }
+#colophon h6 a:hover,
+#colophon h6 a:active {
+  color: #ccc; 
 }
+
+.faq-link {
+  font-size: 1.2rem; /* Larger font size for FAQ link */
+  color: #181c1f;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+    font-weight: bold;
+  }
